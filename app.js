@@ -1,18 +1,15 @@
 
-
-function postData() {
-    $.ajax({
-        type: "GET",
-        url: "/app.py",
-        data: {},
-        success: callbackFunc
+function runPyScript(input) {
+    var output = $.ajax({
+        type:"POST",
+        url:"/",
+        async:false,
+        data: {mydata:input}
     });
-}
-
-function callbackFunc(response) {
-    // do something with the response
-    console.log(response);
-}
+    return output.responseText
+    }
+    result = runPyScript()
+    console.log(result)
 
 function scraper() {
     $.get("app.py",function(out) {
