@@ -10,10 +10,3 @@ function runPyScript(input) {
     }
     result = runPyScript()
     console.log(result)
-
-function scraper() {
-    $.get("app.py",function(out) {
-        document.getElementById("test-test").innerHTML = out
-    })
-}
-
