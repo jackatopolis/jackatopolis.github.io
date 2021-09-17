@@ -44,7 +44,20 @@
 
     <main>
         <p id="test-test"></p>
-        <script src="./app.js"></script>
+        <script src="./app.js">
+        function runPyScript(input) {
+          var output = $.ajax({
+            type:"POST",
+            url:"/",
+            async:false,
+            data: {mydata:input}
+          });
+          return output.responseText
+        }
+        result = runPyScript()
+        console.log(result)
+        
+        </script>
 
 
     </main>
