@@ -1,0 +1,46 @@
+.astro {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    font: 14px Arial, Helvetica, sans-serif;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width:fit-content;
+}
+
+.astro p {
+    text-align: center;
+    font: 14px Arial, Helvetica, sans-serif;
+}
+
+.astro h4 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(77, 74, 74);
+}
+
+.apod-css {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    font: 14px Arial, Helvetica, sans-serif;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width:fit-content;
+}
+
+.apod-css p {
+    text-align: center;
+    font: 14px Arial, Helvetica, sans-serif;
+    color: rgb(77, 74, 74);
+}
+
+.apod-css h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
