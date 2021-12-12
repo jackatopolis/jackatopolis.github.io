@@ -15,8 +15,6 @@ def scrape():
 
 @app.route('/')
 def home():
-    from webscrape import scrape
-    data = scrape()
     return render_template('index.html', out=data)
 
 
