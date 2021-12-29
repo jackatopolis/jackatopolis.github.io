@@ -11,6 +11,7 @@ def scrape():
 
     # Extract Current ISS Crew and Links to Bio
 
+
     executable_path = {'executable_path': ChromeDriverManager().install()}
     browser = Browser('chrome', **executable_path, headless=False)
 
