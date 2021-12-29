@@ -14,8 +14,8 @@ def scrape():
 
 @app.route('/')
 def home():
-    data = scrape()
-    return render_template('index.html', out=data)
+    #data = scrape()
+    return render_template('index.html')#, out=data)
 
 @app.route('/update', methods=['POST'])
 def update():
