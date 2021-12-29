@@ -6,10 +6,10 @@ from webscrape import scrape
 
 app = Flask(__name__)
 
-@app.route('/scraper')
-def scraper():
-    data = scrape()
-    return render_template('index.html', out=data)
+# @app.route('/scraper')
+# def scraper():
+#     data = scrape()
+#     return render_template('index.html', out=data)
 
 
 @app.route('/')
@@ -17,10 +17,10 @@ def home():
     #data = scrape()
     return render_template('index.html')#, out=data)
 
-@app.route('/update', methods=['POST'])
-def update():
-    data = scrape()
-    return jsonify({"jsdata": data})
+# @app.route('/update', methods=['POST'])
+# def update():
+#     data = scrape()
+#     return jsonify({"jsdata": data})
 
 
 
