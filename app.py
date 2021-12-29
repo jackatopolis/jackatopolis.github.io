@@ -6,8 +6,8 @@ from webscrape import scrape
 
 app = Flask(__name__)
 
-@app.route('/scrape')
-def scrape():
+@app.route('/scraper')
+def scraper():
     data = scrape()
     return render_template('index.html', out=data)
 
