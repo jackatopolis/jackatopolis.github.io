@@ -7,10 +7,6 @@ from webscrape import scrape
 
 app = Flask(__name__)
 
-# @app.route('/scraper')
-# def scraper():
-#     data = scrape()
-#     return render_template('index.html', out=data)
 
 
 @app.route('/')
