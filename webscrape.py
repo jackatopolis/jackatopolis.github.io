@@ -43,7 +43,6 @@ def scrape():
 
     apod = req.get(url).json()
     
-    print("APOD done")
 
     # EONET Events (Earth Observatory Natural Event Tracker)
 
@@ -84,7 +83,6 @@ def scrape():
     # }
 
     eonet_data = 0
-    print("EONET done")
 
 
     url = 'https://www.timeanddate.com/holidays/us/'
@@ -100,7 +98,6 @@ def scrape():
     holidays_new.drop(index=511,inplace=True)
     holidays_new.dropna(subset=['Date'],inplace=True)
 
-    print(holidays_new)
 
     dt = []
     # from dateutil.parser import *
@@ -118,7 +115,6 @@ def scrape():
                 (holidays_new['Date']==(date.today()+timedelta(days=5)))]
     results = hol.to_json(orient="index")
 
-    print("Holidays done")
 
     # Save final Dataset for export
     dataset = {

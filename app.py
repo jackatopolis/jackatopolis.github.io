@@ -15,7 +15,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    data = scrape() #"Test Test" #
+    from webscrape import scrape
+    data = scrape()
     return render_template('index.html', out=data)
 
 
