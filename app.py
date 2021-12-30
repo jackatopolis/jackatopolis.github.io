@@ -4,6 +4,7 @@ from flask import Flask, jsonify, render_template,redirect,url_for,request,make_
 import webscrape as ws
 
 #testData = scrape()
+data = ws.scrapeData()
 
 app = Flask(__name__)
 
@@ -11,7 +12,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    data = ws.scrapeData()
     return render_template('index.html', out=data)
 
 
