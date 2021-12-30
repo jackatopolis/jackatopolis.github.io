@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home():
     import webscrape as ws
     data = ws.scrapeData()
-    return render_template('index.html', out=data)
+    return render_template('index.html', out=jsonify(data))
 
 
 # @app.route('/update', methods=['POST'])
