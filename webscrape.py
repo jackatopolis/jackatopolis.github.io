@@ -1,4 +1,4 @@
-def scrape():
+def scrapeData():
     from bs4 import BeautifulSoup as bs
     import matplotlib.pyplot as plt
     import requests as req

@@ -1,7 +1,7 @@
 import numpy as np
 import pymongo
 from flask import Flask, jsonify, render_template,redirect,url_for,request,make_response
-from webscrape import scrape
+from webscrape import scrapeData
 
 #testData = scrape()
 
@@ -11,8 +11,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    from webscrape import scrape
-    data = scrape()
+    data = scrapeData()
     return render_template('index.html', out=data)
 
 
