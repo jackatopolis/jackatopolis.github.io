@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     import webscrape as ws
-    data = list(ws.scrapeData())
+    data = ws.scrapeData()
     return render_template('index.html', out=data)
 
 
